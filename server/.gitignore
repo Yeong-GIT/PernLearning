@@ -1,0 +1,14 @@
+#ignore all .txt files
+*.txt
+*.o
+
+#ignore dependencies
+/node_modules
+/vendor
+
+#ignore log files
+*.log
+
+#ignore IDE 
+.vscode/
+dist/
