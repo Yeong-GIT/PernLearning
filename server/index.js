@@ -7,6 +7,31 @@ const pool = require("./db");
 app.use(cors());
 app.use(express.json()); //let us have access to request the body
 
+//ROUTES//
+
+//create todo
+app.post("/todos", async(req, res) =>{
+    //async is to wait, await
+    try{
+        const {description} = req.body;
+        const newTodo = await pool.query("INSERT INTO todo (description) VALUES($1)", 
+        [description]
+        );
+
+        res.json(newTodo2)
+    }catch (err) {
+        console.error(err.message);
+    }
+})
+
+
+//get all todo
+
+//get a todo
+
+//update a todo
+
+//delete a todo
 
 
 
