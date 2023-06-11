@@ -23,12 +23,10 @@ const InputTodo = () => {
     return (
         <Fragment>
             <div >
-                    <h1 className='text-5xl text-center '>Pern Todo List</h1>
-                    <form className='mt-5' onSubmit={onSubmitForm}>
-                        <input 
-                        type = "text" 
-                        className="bg-gray-200" value={description} onChange={e => setDescription(e.target.value)}/>
-                        <button type="submit">Add</button>
+                    <h1 className='text-7xl'>Pern Todo List</h1>
+                    <form className='mt-20' onSubmit={onSubmitForm}>
+                        <input type = "text" className='bg-gray-100 h-10 w-3/5' value={description} onChange={e => setDescription(e.target.value)}/>
+                        <button type="submit" className='bg-pink-400 h-10 w-10 rounded-md'>Add</button>
                     </form>
                     </div>
         </Fragment>
