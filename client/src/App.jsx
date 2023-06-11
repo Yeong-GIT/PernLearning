@@ -1,12 +1,16 @@
 import { useState } from 'react'
 import './App.css'
+
+//components
 import Sidenav from './assets/components/Sidenav'
+import InputTodo from './assets/components/InputTodo'
 
 function App() {
   
   return (
     <div>
         <Sidenav/>
+        <InputTodo/>
     </div>
   )
 }
